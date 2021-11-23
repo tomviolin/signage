@@ -100,7 +100,7 @@ function insertEvents($icsFile, $psource='') {
 	}
 }
 insertEvents("http://localhost/signage/sfscal.php", 'http://uwm.edu/freshwater/events/?ical=1');
-insertEvents('/calendars/GLRF_ALL.ics');
+insertEvents('/calendars/GLRF_ALL.ics','roar');
 insertEvents('https://calendar.google.com/calendar/ical/omohit5llfij2fnafsadkeihlc%40group.calendar.google.com/private-b83faceb660da1fd7e5793f57e96bdfc/basic.ics');
 insertEvents('https://calendar.google.com/calendar/ical/sfs.neeskay%40gmail.com/public/basic.ics');
 
