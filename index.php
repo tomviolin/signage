@@ -6,7 +6,7 @@ if (isset($argv[1])) {
 } else {
 	$timeoffset = 0;
 }
-$videoID=file_get_contents("http://waterbase.uwm.edu/lastvideo/lastvidid.txt");
+//$videoID=file_get_contents("http://waterbase.uwm.edu/lastvideo/lastvidid.txt");
 
 $MAPWIDTH=977;
 $MAPHEIGHT=550;
@@ -70,7 +70,7 @@ $MAPMARGIN=10;
 		background-size: 180px 110px;
 		background-repeat: no-repeat;
 		background-position: 80% 80%;
-		background-image: url('https://uwm.edu/freshwater/wp-content/uploads/sites/48/2014/10/neeskay-2.jpg');
+		xbackground-image: url('https://uwm.edu/freshwater/wp-content/uploads/sites/48/2014/10/neeskay-2.jpg');
 	}
 	#neeskay li.neeskay {
 		background-color: #000066;
