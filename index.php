@@ -630,7 +630,7 @@ body {
 
 </head>
 <body style="background-color: black;"> 
-<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('http://waterbase.uwm.edu/lastvideo/current.jpg'); background-size: 120.5%"></div>
+<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; xbackground-image: url('http://waterbase.uwm.edu/lastvideo/current.jpg'); background-size: 120.5%"></div>
 
 <!-- <div id="bg0" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:0"></div>
 <div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:1"></div>  -->
