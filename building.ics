@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SFS Building Announcements
+X-WR-TIMEZONE:America/Chicago
+X-WR-CALDESC:Announcements of interest to building personnel and visitors. 
+  DIsplayed on announcement monitors at entrances.
+BEGIN:VEVENT
+DTSTART:20170307T120000Z
+DTEND:20170307T150000Z
+DTSTAMP:20170221T174534Z
+UID:4qri4fp8qjgancbkc31031u6qo@google.com
+CREATED:20170221T174148Z
+DESCRIPTION:There will be an all-hands meeting in the ballroom at 9:00. PLE
+ ASE BE THERE.
+LAST-MODIFIED:20170221T174250Z
+LOCATION:Ballroom
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:All Hands Meeting
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

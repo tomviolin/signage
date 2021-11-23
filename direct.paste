@@ -1,0 +1,243 @@
+HTTP/1.0 200 OK
+Date: Wed, 02 May 2018 21:17:12 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.6.35-1+ubuntu14.04.1+deb.sury.org+1
+Content-Disposition: attachment; filename="school-of-freshwater-sciences-56105e7e859.ics"
+Access-Control-Allow-Origin: *
+Connection: close
+Content-Type: text/calendar; charset=UTF-8
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//School of Freshwater Sciences - ECPv4.6.13//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:School of Freshwater Sciences
+X-ORIGINAL-URL:http://uwm.edu/freshwater
+X-WR-CALDESC:Events for School of Freshwater Sciences
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180810T070000
+DTEND;TZID=America/Chicago:20180810T180000
+DTSTAMP:20180502T211719
+CREATED:20180409T170839Z
+LAST-MODIFIED:20180409T170839Z
+UID:12909-1533884400-1533924000@uwm.edu
+SUMMARY:USGS-WEF Meeting
+DESCRIPTION:Knowledge of Development Forum – Optical Sensors in Water Quality \nOptical sensors and where they can be sued with greatest likelihood of success.  Register through WEF and USGS. \n
+URL:http://uwm.edu/freshwater/event/usgs-wef-meeting/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0174858;-87.904112
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904112,43.0174858
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180725T070000
+DTEND;TZID=America/Chicago:20180725T180000
+DTSTAMP:20180502T211719
+CREATED:20170814T212055Z
+LAST-MODIFIED:20170814T212055Z
+UID:11202-1532502000-1532541600@uwm.edu
+SUMMARY:No Teacher Left Inside Summer Institute
+DESCRIPTION:The annual No Teacher Left Inside Institute bring together teachers from all grade levels\, content areas\, and schools to learn about community-based environmental learning\, learn new outdoor skills\, and build a community of professionals committed to engaging students in learning about the world around them. Community-based environmental learning integrates science research and inquiry\, project-based\, place-based\, and service-learning methodologies to empower students to make a difference in their local environment. \n
+URL:http://uwm.edu/freshwater/event/no-teacher-left-inside-summer-institute/2018-07-25/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180724T070000
+DTEND;TZID=America/Chicago:20180724T180000
+DTSTAMP:20180502T211719
+CREATED:20170814T212055Z
+LAST-MODIFIED:20170814T212055Z
+UID:11201-1532415600-1532455200@uwm.edu
+SUMMARY:No Teacher Left Inside Summer Institute
+DESCRIPTION:The annual No Teacher Left Inside Institute bring together teachers from all grade levels\, content areas\, and schools to learn about community-based environmental learning\, learn new outdoor skills\, and build a community of professionals committed to engaging students in learning about the world around them. Community-based environmental learning integrates science research and inquiry\, project-based\, place-based\, and service-learning methodologies to empower students to make a difference in their local environment. \n
+URL:http://uwm.edu/freshwater/event/no-teacher-left-inside-summer-institute/2018-07-24/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180723T070000
+DTEND;TZID=America/Chicago:20180723T180000
+DTSTAMP:20180502T211719
+CREATED:20170814T212055Z
+LAST-MODIFIED:20170814T212055Z
+UID:11199-1532329200-1532368800@uwm.edu
+SUMMARY:No Teacher Left Inside Summer Institute
+DESCRIPTION:The annual No Teacher Left Inside Institute bring together teachers from all grade levels\, content areas\, and schools to learn about community-based environmental learning\, learn new outdoor skills\, and build a community of professionals committed to engaging students in learning about the world around them. Community-based environmental learning integrates science research and inquiry\, project-based\, place-based\, and service-learning methodologies to empower students to make a difference in their local environment. \n
+URL:http://uwm.edu/freshwater/event/no-teacher-left-inside-summer-institute/2018-07-23/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180625T160000
+DTEND;TZID=America/Chicago:20180625T190000
+DTSTAMP:20180502T211719
+CREATED:20180430T214853Z
+LAST-MODIFIED:20180430T214853Z
+UID:13043-1529942400-1529953200@uwm.edu
+SUMMARY:GMF Presents: UWM SFS
+DESCRIPTION:Greater Milwaukee Foundation presents the work and science of the UWM School of Freshwater Sciences and Harbor District\, Inc. \nGreater Milwaukee Foundation (GMF) supports efforts to make the greater Milwaukee region a vibrant\, economically thriving region comprised of welcoming and inclusive communities that provide opportunity\, prosperity and a high quality of life for all. In this private event\, GMF will bring community leaders to the edge of Lake Michigan to explore the cutting edge science happening at the UWM School of Freshwater Sciences and to learn about how Harbor District\, Inc. is revitalizing Milwaukee’s inner harbor. \n(This event is by invitation only.) \n
+URL:http://uwm.edu/freshwater/event/gmf-presents-uwm-sfs/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20180618
+DTEND;VALUE=DATE:20180623
+DTSTAMP:20180502T211719
+CREATED:20180306T211636Z
+LAST-MODIFIED:20180306T211636Z
+UID:12746-1529280000-1529711999@uwm.edu
+SUMMARY:Next Generation 16S rDNA gene Sequencing and Data Analysis Workshop
+DESCRIPTION:The Great Lakes Genomics Center and UWM School of Freshwater Sciences are pleased to invite you to a hands-on microbial community library preparation and data analysis workshop.  During this workshop\, you will generate 16S rDNA gene libraries for Illumina MiSeq sequencing using your own research samples and analyze your data using the latest tools.  Sequence analysis workflows and bioinformatics approaches to community-generated data will also be covered. \nThis workshop includes: \n\n16S rDNA gene library generation and sequencing\nMiSeq Data QC\nIntroduction basis of analysis pipelines and common tools\, including Mothur\, QIIME (including Dada2)\, MED\, and Anvio\n\nCost: $900 \nRegistration: Email Angie Schmoldt at angelas@uwm.edu \nWorkshop prerequisites: Working knowledge of microbial community analysis\, experience in molecular techniques (i.e. PCR or Sanger sequencing). \nFor more information\, please contact Sandra McLellan\, Professor\, School of Freshwater Sciences at mclellan@uwm.edu or (414) 382-1710. \n
+URL:http://uwm.edu/freshwater/event/next-generation-16s-rdna-gene-sequencing-data-analysis-workshop/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180612T153000
+DTEND;TZID=America/Chicago:20180612T170000
+DTSTAMP:20180502T211719
+CREATED:20171211T213652Z
+LAST-MODIFIED:20171211T213652Z
+UID:12870-1528817400-1528822800@uwm.edu
+SUMMARY:Information Session and Tour
+DESCRIPTION:Are you considering graduate school? Do you want to make a difference for our waters? Your passion for the environment and your STEM background are a great start! Solve the world’s water problems. Join School of Freshwater Sciences students and scientists on a freshwater adventure! Get your hands dirty and your feet wet in the largest freshwater ecosystem in the world\, right outside our back door.  \nClick here to register for an information session and learn more! Enjoy a tour of our facilities and fleet\, explore our programs\, and learn about opportunities available at the School of Freshwater Sciences.  Sessions last 1-1 1/2 hours\, and include plenty of time for questions during and after the tour. \n
+URL:http://uwm.edu/freshwater/event/information-session-and-tour/2018-06-12/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+ORGANIZER;CN="Mallory%20Kaul":MAILTO:malkaul@uwm.edu
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180530T153000
+DTEND;TZID=America/Chicago:20180530T170000
+DTSTAMP:20180502T211719
+CREATED:20171211T213652Z
+LAST-MODIFIED:20171211T213652Z
+UID:12869-1527694200-1527699600@uwm.edu
+SUMMARY:Information Session and Tour
+DESCRIPTION:Are you considering graduate school? Do you want to make a difference for our waters? Your passion for the environment and your STEM background are a great start! Solve the world’s water problems. Join School of Freshwater Sciences students and scientists on a freshwater adventure! Get your hands dirty and your feet wet in the largest freshwater ecosystem in the world\, right outside our back door.  \nClick here to register for an information session and learn more! Enjoy a tour of our facilities and fleet\, explore our programs\, and learn about opportunities available at the School of Freshwater Sciences.  Sessions last 1-1 1/2 hours\, and include plenty of time for questions during and after the tour. \n
+URL:http://uwm.edu/freshwater/event/information-session-and-tour/2018-05-30/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+ORGANIZER;CN="Mallory%20Kaul":MAILTO:malkaul@uwm.edu
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180511T110000
+DTEND;TZID=America/Chicago:20180511T120000
+DTSTAMP:20180502T211719
+CREATED:20180426T191640Z
+LAST-MODIFIED:20180426T191640Z
+UID:13020-1526036400-1526040000@uwm.edu
+SUMMARY:Samm Posnanski - Internship Presentation
+DESCRIPTION:Monitoring pollutants in Wisconsin’s air: why we do it and is our air getting better?\nPlease join us for Samm Posnanski’s internship presentation in the ballroom on Friday\, May 11th at 11:00am. \n \n
+URL:http://uwm.edu/freshwater/event/samm-posnanski-internship-presentation/
+LOCATION:600 E. Greenfield Ave\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E. Greenfield Ave Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E. Greenfield Ave:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180510T153000
+DTEND;TZID=America/Chicago:20180510T170000
+DTSTAMP:20180502T211719
+CREATED:20171211T213652Z
+LAST-MODIFIED:20171211T213652Z
+UID:12868-1525966200-1525971600@uwm.edu
+SUMMARY:Information Session and Tour
+DESCRIPTION:Are you considering graduate school? Do you want to make a difference for our waters? Your passion for the environment and your STEM background are a great start! Solve the world’s water problems. Join School of Freshwater Sciences students and scientists on a freshwater adventure! Get your hands dirty and your feet wet in the largest freshwater ecosystem in the world\, right outside our back door.  \nClick here to register for an information session and learn more! Enjoy a tour of our facilities and fleet\, explore our programs\, and learn about opportunities available at the School of Freshwater Sciences.  Sessions last 1-1 1/2 hours\, and include plenty of time for questions during and after the tour. \n
+URL:http://uwm.edu/freshwater/event/information-session-and-tour/2018-05-10/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904212,43.0175705
+ORGANIZER;CN="Mallory%20Kaul":MAILTO:malkaul@uwm.edu
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180510T110000
+DTEND;TZID=America/Chicago:20180510T120000
+DTSTAMP:20180502T211719
+CREATED:20180426T191031Z
+LAST-MODIFIED:20180426T191317Z
+UID:13017-1525950000-1525953600@uwm.edu
+SUMMARY:Phil Rouse - Internship Presentation
+DESCRIPTION:Applying Quality Assurance/Quality Control Procedures for Cyst Removal in Domestic Residential Water Filtration Units: An Internship at Pentair\nPlease join us for Phil Rouse’s internship presentation in the ballroom on Thursday\, May 10th at 11:00am. \n \n
+URL:http://uwm.edu/freshwater/event/phil-rouse-internship-presentation/
+LOCATION:600 E. Greenfield Ave\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E. Greenfield Ave Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E. Greenfield Ave:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180509T180000
+DTEND;TZID=America/Chicago:20180509T203000
+DTSTAMP:20180502T211719
+CREATED:20180108T210417Z
+LAST-MODIFIED:20180108T210417Z
+UID:12307-1525888800-1525897800@uwm.edu
+SUMMARY:Milwaukee Microbiology Society
+DESCRIPTION:Milwaukee Microbiology Society gathers for conversation and presentations. \n
+URL:http://uwm.edu/freshwater/event/milwaukee-microbiology-society-2/2018-05-09/
+LOCATION:600 E Greenfield Avenue\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0174858;-87.904112
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E Greenfield Avenue Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E Greenfield Avenue:geo:-87.904112,43.0174858
+ORGANIZER;CN="Deb%20Dila":MAILTO:dila@uwm.edu
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180509T174500
+DTEND;TZID=America/Chicago:20180509T190000
+DTSTAMP:20180502T211719
+CREATED:20180413T194750Z
+LAST-MODIFIED:20180413T194750Z
+UID:13003-1525887900-1525892400@uwm.edu
+SUMMARY:Student Water Council Meeting
+DESCRIPTION:Get to know our new Policy Director\, Dr. Boyer\, spend time relaxing with your fellow students and enjoy some free pizza! \nFor our final meeting of the semester\, we have invited Dr. Tracy Boyer to join us for a casual meet and greet over pizza!  We’ll also be discussing the results of our SAC grant applications and our Big Plans for the fall semester\, as well as tossing around some ideas for fun summer get-togethers.  Please join us! \n
+URL:http://uwm.edu/freshwater/event/student-water-council-meeting-4/
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180508T160000
+DTEND;TZID=America/Chicago:20180508T170000
+DTSTAMP:20180502T211719
+CREATED:20180426T200316Z
+LAST-MODIFIED:20180426T201317Z
+UID:13027-1525795200-1525798800@uwm.edu
+SUMMARY:Seminar with Eric Anderson\, NOAA
+DESCRIPTION:Ice Forecasting and Turbulent Heat Flux Simulation in the Next-Generation Great Lakes Operational Forecast System (GLOFS) \nThe next-generation GLOFS models include a suite of improvements to hydrodynamic prediction in the Great Lakes including finer coastal resolution\, calibration of turbulent heat fluxes\, and ice formation. The goal of these improvements is to move away from a siloed approach to geophysical science and toward an integrated approach for total water prediction. I will introduce the latest updates to GLOFS and present recent work on ice forecasting\, comparison of model fluxes to over-lake measurements\, and connections to public safety. \n\nDr. Eric Anderson is a physical oceanographer with the NOAA Great Lakes Environmental Research Laboratory in Ann Arbor\, MI. He received his Ph.D. in Mechanical & Aerospace Engineering from Case Western Reserve University\, and began his research on the Great Lakes while working at the University of Michigan as a Research Scientist before taking his current position at NOAA. His research focuses on the hydrodynamics of the lakes and connecting channels\, including development of Great Lakes Operational Forecast System (GLOFS)\, which provides nowcast and forecast conditions of currents\, water temperature\, water level fluctuations\, and ice. This work also drives investigations of contaminant transport (e.g. oil spill movement) such as in the Straits of Mackinac\, harmful algal blooms extent and intensity\, and hypoxia in Lake Erie.\n
+URL:http://uwm.edu/freshwater/event/seminar-with-eric-anderson-noaa/
+LOCATION:600 E. Greenfield Ave\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E. Greenfield Ave Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E. Greenfield Ave:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180503T160000
+DTEND;TZID=America/Chicago:20180503T170000
+DTSTAMP:20180502T211719
+CREATED:20180202T191339Z
+LAST-MODIFIED:20180202T191339Z
+UID:12597-1525363200-1525366800@uwm.edu
+SUMMARY:Colloquium in Freshwater Sciences
+DESCRIPTION:Dan Egan\, Milwaukee Journal Sentinel\, and Center for Water Policy Fellow \n
+URL:http://uwm.edu/freshwater/event/colloquium-in-freshwater-sciences-12/
+LOCATION:600 E. Greenfield Ave\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E. Greenfield Ave Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E. Greenfield Ave:geo:-87.904212,43.0175705
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20180503T123000
+DTEND;TZID=America/Chicago:20180503T133000
+DTSTAMP:20180502T211719
+CREATED:20180426T192138Z
+LAST-MODIFIED:20180426T192138Z
+UID:13023-1525350600-1525354200@uwm.edu
+SUMMARY:Angeline Koch - Internship Presentation
+DESCRIPTION:Making Sausage: How science-based policy gets adopted by local governments\nPlease join us for Angeline Koch’s internship presentation in the ballroom on Thursday\, May 3rd at 12:30pm. \n \n  \n
+URL:http://uwm.edu/freshwater/event/angeline-koch-internship-presentation/
+LOCATION:600 E. Greenfield Ave\, Milwaukee\, WI\, 53204\, United States
+GEO:43.0175705;-87.904212
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=600 E. Greenfield Ave Milwaukee WI 53204 United States;X-APPLE-RADIUS=500;X-TITLE=600 E. Greenfield Ave:geo:-87.904212,43.0175705
+END:VEVENT
+END:VCALENDAR

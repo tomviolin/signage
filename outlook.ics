@@ -1,0 +1,222 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+X-WR-CALNAME:SFS Security Notices
+BEGIN:VTIMEZONE
+TZID:Central Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DESCRIPTION:\n------------\n                    Subject:    Harbor Distric 
+ 2/21\n                    Start Date: Tuesday\, February 21\, 2017\n      
+               Due Date:   Tuesday\, February 21\, 2017\n\n                
+     Status:     Not Started\n                    Percent Complete:   0%\n\
+ n                    Total Work: 0 hours\n                    Actual Work:
+         0 hours\n\n                    Owner:      Robert W Paddock\n\n   
+                  Categories: A-Doors\n\n\n------------\n                  
+   From:       Dan Adams <dan@harbordistrict.org<mailto:dan@harbordistrict.
+ org>>\n                    Sent:       Tuesday\, January 31\, 2017 3:21 PM
+ \n                    To: Mallory L Kaul\; sfs-it-help\; Robert W Paddock\
+ n                    Subject:    Room Reservation\n\nEvent/Meeting Title\n
+          WaLUP Plan Advisory Group Meeting\nWould you like your event to a
+ ppear under Upcoming Events on the UWM School of Freshwater Sciences websi
+ te?\n\n•       No\n\nSponsoring Organization\n         Harbor District\,
+  Inc.\nContact Person\n         Dan Adams\nContact E-mail Address\n       
+   dan@harbordistrict.org<mailto:dan@harbordistrict.org>\nEstimate Headcoun
+ t\n         40\nRoom(s) Requested\n\n•       3080 (cap. 60)\n\nBegin Dat
+ e\n         02/21/2017\nBegin Time\n         03:30 pm\nEnd Date\n         
+ 02/21/2017\nEnd Time\n         06:30 pm\n\nIs A/V or conference phone equi
+ pment required?\n\n•       Yes\n\nPlease describe any A/V needs\n       
+   We'll be using the rolling tvs in that room.\n\n\n\n\n\n
+UID:040000008200E00074C5B7101A82E0080000000090FA3AC78F87D201000000000000000
+ 010000000B2C2C2C7A4491F4394A84FA420E38681
+SUMMARY:Harbor Distric 2/21
+DTSTART;VALUE=DATE:20170221
+DTEND;VALUE=DATE:20170222
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20170227T181105Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:\n------------\n                    Subject:    Geosciences mee
+ ting 2/23\n                    Start Date: Thursday\, February 23\, 2017\n
+                     Due Date:   Thursday\, February 23\, 2017\n\n         
+            Status:     Not Started\n                    Percent Complete: 
+   0%\n\n                    Total Work: 0 hours\n                    Actua
+ l Work:        0 hours\n\n                    Owner:      Robert W Paddock
+ \n\n                    Categories: A-Doors\n\n\n------------\n           
+          From:       Doug Cherkauer <aquadoc@uwm.edu<mailto:aquadoc@uwm.ed
+ u>>\n                    Sent:       Friday\, January 20\, 2017 1:36 PM\n 
+                    To: Mallory L Kaul\; sfs-it-help\; Robert W Paddock\n  
+                   Subject:    Room Reservation\n\nEvent/Meeting Title\n   
+       Environmental Science Exchange\nWould you like your event to appear 
+ under Upcoming Events on the UWM School of Freshwater Sciences website?\n\
+ n•       Yes\n\nEvent Summary\n         Presentation about global climat
+ e change by Mark Borucki\, Lecturer in Geociences. Event is from 5:00 to 6
+ :30 and is open to all interested parties.\nSponsoring Organization\n     
+     Dept. of Geosciences\nContact Person\n         Doug Cherkauer\nContact
+  E-mail Address\n         aquadoc@uwm.edu<mailto:aquadoc@uwm.edu>\nEstimat
+ e Headcount\n         45\nRoom(s) Requested\n\n•       Ballroom (cap. 50
+ )\n\nBegin Date\n         02/23/2017\nBegin Time\n         04:30 pm\nEnd D
+ ate\n         02/23/2017\nEnd Time\n         06:30 pm\nDoes this event req
+ uire set-up or pre-event time?\n\n•       Yes\n\nPlease describe the add
+ itional time required before the event\n         We'll begin activating th
+ e video projector and computer at 4:30\, with the presentation to begin at
+  5:00. We will also need the entry doors to be programmed to remain unlock
+ ed for entry until 5:30 pm.\nDoes this event require post-event or takedow
+ n time?\n\n•       No\n\nWill your reservation be held outside of normal
+  business hours (Monday-Friday 8:00am-5:00pm)?\n         Yes\nDoes this ev
+ ent repeat?\n\n•       No\n\nIs registation required?\n\n•       No\n\
+ nIs A/V or conference phone equipment required?\n\n•       Yes\n\nPlease
+  describe any A/V needs\n         We will need to use the computer and vid
+ eo projection system that is present in the Ballroom.\n\n\n\n\n\n
+UID:040000008200E00074C5B7101A82E00800000000F025ABCB8F87D201000000000000000
+ 010000000B990D183BBDCEC44B34F9B3281A98F47
+SUMMARY:Geosciences meeting 2/23
+DTSTART;VALUE=DATE:20170223
+DTEND;VALUE=DATE:20170224
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20170227T181105Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:\n------------\n                    Subject:    Door Access sch
+ ool of ed\n                    Start Date: Wednesday\, February 01\, 2017\
+ n                    Due Date:   Saturday\, February 25\, 2017\n          
+           Priority:   High\n\n                    Status:     Not Started\
+ n                    Percent Complete:   0%\n\n                    Total W
+ ork: 0 hours\n                    Actual Work:        0 hours\n\n         
+            Owner:      Robert W Paddock\n\n                    Categories:
+  A-Doors\n\n\n------------\n                    From:       Mallory L Kaul
+ \n                    Sent:       Tuesday\, January 31\, 2017 2:34 PM\n   
+                  To: Robert W Paddock\n                    Subject:    Doo
+ r Access\n                    Attachments:        FW: From Christine Hill 
+ - Future Milwaukee Executive Director and Former UW-M Instructor\n\n      
+               Importance: High\n\nHi Rob\,\n\nBelow is the e-mail I sent w
+ ith the list of names for the School of Ed.  These people need access on t
+ he following Saturdays: February 25\, March 11\, April 1 from 8:30am-3:30p
+ m.\n\n••••••••• Katherine Bennett 990867336\n\n•••
+ •••••• Paci Lor 991117404\n\n••••••••• Reina
+ ldo Ortiz 991009090\n\n••••••••• Lauren Peterson 9910770
+ 03\n\n••••••••• Mariah Schnee 991288235\n\n••••
+ ••••• Charlotte Wichert 991202206\n\n•••••••••
+  Nathan Wichert 990783871\n\n••••••••• Tony Arellano 991
+ 120599\n\n••••••••• Tatiana Joseph 990403182\n\n\n\nIn a
+ ddition\, please keep the doors unlocked on April 3rd until 6pm for a grou
+ p using 3080 (e-mail attached).\n\n\n\nPlease send me confirmation when th
+ ese are confirmed.  Thanks!!\n\n\n\nMal\n\n\n\nFrom: Mallory L Kaul\nSent:
+  Thursday\, January 19\, 2017 12:18 PM\nTo: 'sfs-it-help@uwm.edu' <sfs-it-
+ help@uwm.edu>\nSubject: School of Ed Access\nImportance: High\n\n\n\nHi To
+ m\,\n\nPlease give the below list of students and instructor (Tatiana) acc
+ ess to the building on the three following Saturdays: February 25\, March 
+ 11\, April 1 from 8:30am to 3:30pm.  They will be using 3093 for a writing
+  workshop.\n\n\n\nPlease let me know if you have any questions and send me
+  confirmation when they have access so I can let them know.\n\n\n\nThanks\
+ ,\n\nMal\n\n\n\nKatherine Bennett 990867336\n\nPaci Lor 991117404\n\nReina
+ ldo Ortiz 991009090\n\nLauren Peterson 991077003\n\nMariah Schnee 99128823
+ 5\n\nCharlotte Wichert 991202206\n\nNathan Wichert 990783871\n\nTony Arell
+ ano 991120599\n\nTatiana Joseph 990403182\n\n\n\n\n\nFrom: Kerry A Korinek
+ \nSent: Wednesday\, January 18\, 2017 4:07 PM\nTo: Mallory L Kaul <malkaul
+ @uwm.edu<mailto:malkaul@uwm.edu>>\nSubject: FW: Room 3093\n\n\n\nHi\, Mall
+ ory.  I got the roster of students who will be working with Tatiana Joseph
+  on those Saturdays.  Please see below and let me know if there are any is
+ sues.\n\n\n\nAgain\, thank you very much.\n\n\n\nK\n\n\n\nFrom: Tatiana Jo
+ seph\nSent: Wednesday\, January 18\, 2017 3:46 PM\nTo: Kerry A Korinek <ko
+ rinek@uwm.edu<mailto:korinek@uwm.edu>>\nSubject: RE: Room 3093\n\n\n\nHere
+  are the students:\n\nKatherine Bennett 990867336\n\nPaci Lor 991117404\n\
+ nReinaldo Ortiz 991009090\n\nLauren Peterson 991077003\n\nMariah Schnee 99
+ 1288235\n\nCharlotte Wichert 991202206\n\nNathan Wichert 990783871\n\nTony
+  Arellano 991-12-0599\n\nTatiana Joseph 990403182\n\n\n\nThanks!\n\n\n\nFr
+ om: Kerry A Korinek\nSent: Tuesday\, December 06\, 2016 2:31 PM\nTo: Mallo
+ ry L Kaul <malkaul@uwm.edu<mailto:malkaul@uwm.edu>>\nSubject: RE: Room 309
+ 3\n\n\n\nExcellent.  Thank you.\n\nK\n\n\n\nFrom: Mallory L Kaul\nSent: Tu
+ esday\, December 06\, 2016 2:26 PM\nTo: Kerry A Korinek <korinek@uwm.edu<m
+ ailto:korinek@uwm.edu>>\nSubject: Re: Room 3093\n\n\n\nFYI - the room is a
+ vailable those dates and I'm holding it for you.  Shoot me a reminder on M
+ onday if you don't hear back from me by then :)\n\n\n\nHold for School of 
+ Ed\n\nMeeting\n\nSchool of Freshwater Sciences (SFS)\n\n10 Attendees Expec
+ ted\n\nSat Feb 25 2017 8:30 am - Sat Feb 25 2017 3:30 pm\n\nRepeats on 3/1
+ 1\, 4/1\n\nGLRF 3093\n\n\n\n\n\n  _____\n\nFrom: Kerry A Korinek\nSent: Tu
+ esday\, December 6\, 2016 2:16 PM\nTo: Mallory L Kaul\nSubject: RE: Room 3
+ 093\n\n\n\nThanks\, Mal.  I understand if it won’t work out\; Saturdays 
+ are odd days.  There would be 5-10 people—the instructor and a handful o
+ f student teachers.  We wouldn’t be sure until placements for Spring stu
+ dent teaching are made.  But it’s a small program\, so no more than 10.\
+ n\n\n\nThanks\,\n\nK\n\n\n\nFrom: Mallory L Kaul\nSent: Tuesday\, December
+  06\, 2016 2:14 PM\nTo: Kerry A Korinek <korinek@uwm.edu<mailto:korinek@uw
+ m.edu>>\nSubject: Re: Room 3093\n\n\n\nHey Kerry\,\n\nI'm glad we can help
+  you out!  Unfortunately since we've had some budget cuts\, we don't have 
+ a security officer in the building on the weekends\, so I would need appro
+ val from the Dean and our Assistant Dean of Facilities before I can confir
+ m (we can no longer unlock the doors on the weekend).  Do you know how man
+ y people it will be?  I'll try to talk them into allowing access with ePan
+ ther ID cards again\, that seemed to work this past semester\; I just want
+  to be upfront with you in case they say no.  The Provost is here now\, so
+  I might be able to give you an update for a couple days.  I'll keep you u
+ pdated and do my best.\n\n\n\nMal\n\n  _____\n\nFrom: Kerry A Korinek\nSen
+ t: Tuesday\, December 6\, 2016 2:01 PM\nTo: Mallory L Kaul\nSubject: Room 
+ 3093\n\n\n\nHi\, Mal.  Our School of Education folks are very fond of your
+  harbor-side location.  I have a request from our languages program\, aski
+ ng if they can use a room at SFS again for 3 days in the Spring for their 
+ writing days.  Would it be possible for us to once again use 3093 (or anot
+ her small room)?  The dates are Saturdays\, 8:30-3:30\, on 2/25\, 3/11\, a
+ nd 4/1.\n\n\n\nPlease let me know.\n\nThank you much.\nK\n\n\n\nKerry A. K
+ orinek\n\nAdministrative Program Specialist\n\nOffice of the Associate Dea
+ n for Academic Affairs\n\nUW-Milwaukee School of Education\n\nphone: 414-2
+ 29-5253\n\nmail: P.O. Box 413\, Milwaukee\, WI  53201\n\nstreet: Enderis H
+ all 589\, 2400 E. Hartford Ave.\, Milwaukee\, WI  53211\n\n\n\n\n\n\n\n\n
+UID:040000008200E00074C5B7101A82E00800000000E047AC848C87D201000000000000000
+ 010000000A9D5D66E853E76459D734036FB5E4B90
+SUMMARY:Door Access school of ed
+DTSTART;VALUE=DATE:20170225
+DTEND;VALUE=DATE:20170226
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20170227T181105Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+END:VEVENT
+END:VCALENDAR
