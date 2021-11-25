@@ -3,5 +3,5 @@ builddockerimage:
 	docker build -t signage .
 
 rundockerimage:
-	docker run -it --rm -p 8882:80 -v /home/tomh/stuff:/calendars signage
+	docker run -i --rm -p 8880:80 -v /tmp/roarcalendars:/calendars signage
 
