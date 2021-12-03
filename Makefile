@@ -1,7 +1,7 @@
-
-builddockerimage:
+all: build run
+build:
 	docker build -t signage .
 
-rundockerimage:
-	docker run -i --rm -p 8880:80 -v /tmp/roarcalendars:/calendars signage
+run:
+	docker run -d --restart always -p 8882:80 -v /tmp/roarcalendars:/calendars signage
 
