@@ -217,7 +217,7 @@ function flipem() {
 function updaterooms(everything, nextMove) {
 	numevents=8;
 	var thisNow = new Date().getTime()/1000 + timeOffset;
-	//$('#bg'+(1-bgidx)).css('background-image','url(http://www.glwi.freshwater.uwm.edu/~tomh/iphonepics/currentlink.jpg?time='+thisNow+')');
+	$('#bg'+(1-bgidx)).css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
 	$('#clock').html(moment(thisNow*1000).format('MMMM D Y h:mm:ss A'));
 	if (!everything) return;
 	$.getJSON("getdata.php?now="+thisNow+"&limitevents="+numevents, function(data) {
