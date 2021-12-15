@@ -33,19 +33,19 @@ $MAPMARGIN=10;
 
 
 <!-- (Start) Add jQuery UI Touch Punch -->
-  <script src="jquery.ui.touch-punch.min.js"></script>
+  <script xsrc="jquery.ui.touch-punch.min.js"></script>
 <!-- (End) Add jQuery UI Touch Punch -->
 
-<script src="jquery.color-animation.js"></script>
+<script xsrc="jquery.color-animation.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-<script src="jquery.sprintf.js"></script>
+<script xsrc="jquery.sprintf.js"></script>
 
-<script src="howler.js"></script>
-<script src="jquery.sparkline.js"></script>
-<script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+<script xsrc="howler.js"></script>
+<script xsrc="jquery.sparkline.js"></script>
+<script xsrc="node_modules/chart.js/dist/Chart.bundle.js"></script>
 <script src="moment-with-locales.js"></script>
-<script src="unslider/dist/js/unslider.js"></script>
+<script xsrc="unslider/dist/js/unslider.js"></script>
 <script src="jquery.marquee.min.js"></script>
 <style>
 	#content {height:96%;}
@@ -213,16 +213,42 @@ function flipem() {
 	$('#bg'+(1-bgidx)).css('z-index', 1-bgidx);
 	bgidx=1-bgidx;
 }
-
-function updaterooms(everything, nextMove) {
+let lastupdate = 0;
+let lastupdatecompleted=true;
+function updaterooms(everything) {
+	//"use strict";
+	console.log("updating rooms...");
 	numevents=8;
 	var thisNow = new Date().getTime()/1000 + timeOffset;
-	// $('#bg'+(1-bgidx)).css('background-image',"url('http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow+"')");
-	$('#player').css('background-image',"url('http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow+"')");
+	console.log("thisNow="+thisNow+" lastupdate+2="+lastupdate+2);
+	if (lastupdatecompleted && thisNow > lastupdate+10) {
+		lastupdate=thisNow;
+		lastupdatecompleted = false;
+		var im=new Image();
+		console.log('new image created.');
+		im.onload=()=>{
+			$('#bg'+(1-bgidx)).css('background-image',"url('http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow+"')");
+			setTimeout(()=>{
+				$('#bg'+(1-bgidx)).show();
+				setTimeout(()=>{
+					$('#bg'+bgidx).hide();
+					bgidx = 1-bgidx;
+					lastupdatecompleted=true;
+				},500);
+			},500);
+			//$('#player').css('background-image',"url('http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow+"')");
+			console.log('updated!');
+		};
+		im.src = "http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow;
+	}
+	console.log("updating clock");
+	
 	$('#clock').html(moment(thisNow*1000).format('MMMM D Y h:mm:ss A'));
-	if (!everything) return;
+	//if (!everything) return;
+	console.log("updating data...");
 	$.getJSON("getdata.php?now="+thisNow+"&limitevents="+numevents, function(data) {
 		latestRoomData = data;
+		console.log('got room data.');
 		// build room lists
 		var rlistml = "";
 		rlistml += outputRooms(data.imminentrooms, 'Classes/Meetings Starting Soon','images/doorflash.gif', '#ddddff','#000000');
@@ -232,7 +258,7 @@ function updaterooms(everything, nextMove) {
 		rlistml += outputRooms(data.roomstomorrow, 'Classes/Meetings Tomorrow, '+moment((thisNow+60*60*24)*1000).format('MMMM D Y'), 'images/doorsclosed.png', '#ddddff','#000000');
 
 		// maps 
-		mapml = "";
+		let mapml = "";
 <?php if (isset($_GET['maps'])) { ?>
 		$.each(data.juststartedrooms, function(index) {
 			mapml += outputMap(this);
@@ -257,10 +283,10 @@ function updaterooms(everything, nextMove) {
 
 
 
-		featuredml='';
+		let featuredml='';
 		for (var i = 0; i < data.featured.length; ++i) {
 			x=data.featured[i];
-			console.log(x.body);
+			//console.log(x.body);
 			p=x.body.indexOf('<br>');
 			if (p>0) {
 				x.body=x.body.substring(0,p);
@@ -282,16 +308,17 @@ function updaterooms(everything, nextMove) {
 				"</li>";
 		}
 		if (data.featured.length >0 ) {
+			let plural;
 			if (data.featured.length > 1) plural="s"; else plural="";
 			featuredml='<li data-role="list-divider" data-theme="b">Featured Event'+plural+'</li>'+featuredml;
 		}
 
 
-		neeskayml='';
+		let neeskayml='';
 		for (var i = 0; i < data.neeskay.length; ++i) {
-			x=data.neeskay[i];
-			console.log(x.body);
-			p=x.body.indexOf('<br>');
+			let x=data.neeskay[i];
+			//console.log(x.body);
+			let p=x.body.indexOf('<br>');
 			if (p>0) {
 				x.body=x.body.substring(0,p);
 			}
@@ -312,11 +339,12 @@ function updaterooms(everything, nextMove) {
 				"</li>";
 		}
 		if (data.neeskay.length >0 ) {
+			let plural;
 			if (data.neeskay.length > 1) plural="s"; else plural="";
 			neeskayml='<li data-role="list-divider" data-theme="b" class="neeskay">Neeskay Cruise'+plural+'</li>'+neeskayml;
 		}
 
-		eventml='<li data-role="list-divider" data-theme="b" style="font-size:150%">Upcoming Events and Announcements</li>';
+		let eventml='<li data-role="list-divider" data-theme="b" style="font-size:150%">Upcoming Events and Announcements</li>';
 		eventml += "<li style='border-color:black;background-color:#ffbd00; display:flex;' data-theme='b'>\n";
 		eventml += "<span style='font-size:200%;color:#000000; background-color: #ffbd00;'>Visit our <a href=\"https://uwm.edu/coronavirus/\">COVID-19 website</a> for information about UWM’s response to the pandemic.</span><br><img width=75 src=\"uwm_corona.png\"></li>";
 		for (var i = 0; i < data.events.length; ++i) {
@@ -327,7 +355,7 @@ function updaterooms(everything, nextMove) {
 			var datedow = moment(x.dtstart*1000).format('dddd');
 			var datetime = moment(x.dtstart*1000).format('h:mm A');
 			var dateend = moment(x.dtend*1000).format('h:mm A');
-			console.log(x.body);
+			//console.log(x.body);
 			p=x.body.indexOf('<br>');
 			if (p>0) {
 				x.body=x.body.substring(0,p);
@@ -410,7 +438,7 @@ function updaterooms(everything, nextMove) {
 		// TRIM based on screen size
 		x=$('#sliders');
 		y=x;
-		/* -- tracing partent heights -- might come in handy again
+		/* -- tracing parent heights -- might come in handy again
 		console.log("sliders:");
 		console.log($(y).height()+": "+$(y).attr('id'))
 		y=y.parent();
@@ -448,9 +476,6 @@ function updaterooms(everything, nextMove) {
 			} else {
 				break;
 			}
-		}
-		if (nextMove) {
-			window.setTimeout(nextMove,200);
 		}
 		$("ul.listview").listview("refresh");
 
@@ -501,7 +526,7 @@ function rotateNext() {
 	}
 	thisRotator = newRotator;
 	if (thisRotator==0) {
-		window.setTimeout("updaterooms(true)",200);
+		window.setTimeout("updaterooms(true)",2000);
 	}
 	if (needShort && $(rotators[thisRotator]).hasClass("short")) {
 		window.setTimeout("rotateNext()", 2000);
@@ -560,17 +585,19 @@ function mapRotator() {
 
 
 $(document).on("pagebeforeshow", function() {
+	/*
 	rotateSound=new Howl({
 		urls: ['storedoor.mp3']
 	});
 	$.getJSON('rooms.json',function(data){
 		roomMaps=data;
-	});
+	}); */
 	initMaps();
-	//window.setInterval(updaterooms,2000, true);
-	window.setInterval(updaterooms, 50, false);
+	//window.setInterval(updaterooms,20000, true);
+	window.setInterval("updaterooms(true)", 5000);
+	console.log("interval set");
 	// rotator
-	updaterooms(true, "initRotator()");
+	//updaterooms(true); //, "initRotator()");
 });
 </script>
 <style>
@@ -631,10 +658,10 @@ body {
 
 </head>
 <body style="background-color: black;"> 
-<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('webcamsample.jpg'); background-size: 120.5%"></div>
+<!-- <div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('http://waterbase.uwm.edu/webcam/currentlink.jpg'); background-size: 120.5%"></div> -->
 
-<!-- <div id="bg0" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:0"></div>
-<div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:1"></div>  -->
+<div id="bg0" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; background-size: 130%; background-position: left bottom;display:block"></div>
+<div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; background-size: 130%; background-position: left bottom;display:none;"></div>
 <div data-role='page' id="page" style="background: rgba(0,0,0,0);">
 	<div data-role="header" xclass="ui-bar" data-theme="c" data-position="fixed" id="mainhead">
 		<h1 style="font-size: 75%">UWM School of Freshwater Sciences Classroom, Meeting & Event Information<span style="display: inline-block; width: 45%" id="clock"></span></h1>
