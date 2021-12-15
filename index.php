@@ -55,7 +55,7 @@ $MAPMARGIN=10;
 	#announcements, #sliders, #roomlist, #featured {
 		margin-top: 0px;
 	}
-	#roomlist { opacity: 0.7; }
+	#roomlist { opacity: 0.9; }
 	#announcements>li {
 		padding-top: 0em;
 		padding-bottom:0em;
@@ -672,7 +672,7 @@ body {
 		</ul>
 		<!-- container for rotating divs -->
 		<div id="rotator" style="position:relative; top:0; left:0">
-			<div class="rotating static short" style="position:absolute; top:0;left:0"><ul data-role="listview" data-inset="true" ><li data-role="list-divider" data-theme="b" style="font-size:150%">UWM Freshwater Webcam</li><li>The UWM School of Freshwater Sciences webcam records 24/7 images of the Inner Harbor of Milwaukee.  The background imagery on this display shows the most recent complete hour of images compressed into 30 seconds. 
+			<div class="rotating static short" style="position:absolute; top:0;left:0"><ul data-role="listview" data-inset="true" ><li data-role="list-divider" data-theme="b" style="font-size:150%">UWM Freshwater Webcam</li><li>The UWM School of Freshwater Sciences webcam records 24/7 images of the Inner Harbor of Milwaukee.  The background imagery on this display shows the most recent image. 
 <!-- <br><br><center><img src="phpqrcode/makeone.php?url=http://yt.vu/+freshwatercam&size=8"</center> -->
 </li></ul></div> 
 			<div class="rotating announcements optional" style="position: absolute; top:0; left:0; opacity:0">

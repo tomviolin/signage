@@ -49,9 +49,9 @@ function insertEvents($icsFile, $psource='') {
 		$source = $psource;
 	}
 	global $db;
-	$ical   = new ICal($icsFile);
+	@$ical   = new ICal($icsFile);
 	//unlink($srcFilename);
-	$events = $ical->events();
+	@$events = $ical->events();
 
 	$date=0;
 	$end=0;
@@ -74,6 +74,7 @@ function insertEvents($icsFile, $psource='') {
 	$st->bindParam(8, $source, SQLITE3_TEXT);
 	$st->bindParam(9, $url, SQLITE3_TEXT);
 
+	if (isset($events))
 	foreach ($events as $event) {
 		//print_r($event);
 		$date = strtotime($event['DTSTART']);
