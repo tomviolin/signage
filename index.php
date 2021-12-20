@@ -221,6 +221,7 @@ function updaterooms(everything) {
 	numevents=8;
 	var thisNow = new Date().getTime()/1000 + timeOffset;
 	console.log("thisNow="+thisNow+" lastupdate+2="+lastupdate+2);
+	/*
 	if (lastupdatecompleted && thisNow > lastupdate+10) {
 		lastupdate=thisNow;
 		lastupdatecompleted = false;
@@ -241,6 +242,7 @@ function updaterooms(everything) {
 		};
 		im.src = "http://waterbase.uwm.edu/webcam/currentlink.jpg?time="+thisNow;
 	}
+	*/
 	console.log("updating clock");
 	
 	$('#clock').html(moment(thisNow*1000).format('MMMM D Y h:mm:ss A'));
@@ -256,7 +258,7 @@ function updaterooms(everything) {
 		rlistml += outputRooms(data.currentrooms, 'Classes/Meetings In Progress', 'images/doorsclosed.png', '#ddddff','#000000');
 		rlistml += outputRooms(data.roomstoday, 'Classes/Meetings Coming Up Today', 'images/doorsopen.png', '#ddddff','#000000');
 		rlistml += outputRooms(data.roomstomorrow, 'Classes/Meetings Tomorrow, '+moment((thisNow+60*60*24)*1000).format('MMMM D Y'), 'images/doorsclosed.png', '#ddddff','#000000');
-
+/*
 		// maps 
 		let mapml = "";
 <?php if (isset($_GET['maps'])) { ?>
@@ -281,9 +283,10 @@ function updaterooms(everything) {
 		$("#room_maps ul").listview();
 <?php	} ?>
 
-
+ */
 
 		let featuredml='';
+		console.log("featured items: "+data.featured.length);
 		for (var i = 0; i < data.featured.length; ++i) {
 			x=data.featured[i];
 			//console.log(x.body);
@@ -315,6 +318,7 @@ function updaterooms(everything) {
 
 
 		let neeskayml='';
+		console.log("neeskay items: "+data.neeskay.length);
 		for (var i = 0; i < data.neeskay.length; ++i) {
 			let x=data.neeskay[i];
 			//console.log(x.body);
@@ -347,6 +351,7 @@ function updaterooms(everything) {
 		let eventml='<li data-role="list-divider" data-theme="b" style="font-size:150%">Upcoming Events and Announcements</li>';
 		eventml += "<li style='border-color:black;background-color:#ffbd00; display:flex;' data-theme='b'>\n";
 		eventml += "<span style='font-size:200%;color:#000000; background-color: #ffbd00;'>Visit our <a href=\"https://uwm.edu/coronavirus/\">COVID-19 website</a> for information about UWM’s response to the pandemic.</span><br><img width=75 src=\"uwm_corona.png\"></li>";
+		console.log("events items: "+data.events.length);
 		for (var i = 0; i < data.events.length; ++i) {
 			x=data.events[i];
 			var datemonth = moment(x.dtstart*1000).format('MMM');
@@ -450,6 +455,8 @@ function updaterooms(everything) {
 		y=y.parent();
 		console.log($(y).height()+": "+$(y).attr('id'))
 		*/
+		// DISABLE TRIMMING
+		/*
 		if (x && x != undefined || x.parent() != undefined){
 			while(true) {
 				m=x.parent().height();
@@ -477,6 +484,7 @@ function updaterooms(everything) {
 				break;
 			}
 		}
+		*/
 		$("ul.listview").listview("refresh");
 
 		$('div.ui-loader').hide();
