@@ -636,7 +636,7 @@ body {
 <div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:1"></div>  -->
 <div data-role='page' id="page" style="background: rgba(0,0,0,0);">
 	<div data-role="header" xclass="ui-bar" data-theme="c" data-position="fixed" id="mainhead">
-		<h1 style="font-size: 75%">UWM School of Freshwater Sciences Classroom, Meeting & Event Information<span style="display: inline-block; width: 45%" id="clock"></span></h1>
+		<h1 style="font-size: 60%">UWM School of Freshwater Sciences Classroom, Meeting & Event Information<span style="display: inline-block; width: 45%" id="clock"></span></h1>
 	</div>
 	<div id="content" data-role="content" style="background: rgba(0,0,0,0) !important;">
 		<!-- container for room reservations -->
