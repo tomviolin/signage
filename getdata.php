@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $nowarg="";
 if (isset($argv[1])) {
 	$nowarg = $argv[1];
@@ -74,6 +75,7 @@ function insertEvents($icsFile, $psource='') {
 	$st->bindParam(8, $source, SQLITE3_TEXT);
 	$st->bindParam(9, $url, SQLITE3_TEXT);
 
+	if (is_array($events))
 	foreach ($events as $event) {
 		//print_r($event);
 		$date = strtotime($event['DTSTART']);
