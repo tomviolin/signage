@@ -221,7 +221,8 @@ class ICal
     public function events() 
     {
         $array = $this->cal;
-        return $array['VEVENT'];
+        if (isset($array['VEVENT'])) 
+            return $array['VEVENT'];
     }
 
     /**
