@@ -5,5 +5,5 @@ build:
 run:
 	docker kill signage || echo ""
 	docker rm signage || echo ""
-	docker run --name signage -d --restart always -p 8882:80 -v /tmp/roarcalendars:/calendars signage
+	docker run --name signage -d --restart always -p 80:80 -v /tmp/roarcalendars:/calendars signage
 

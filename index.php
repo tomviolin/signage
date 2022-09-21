@@ -56,13 +56,19 @@ $MAPMARGIN=10;
 		margin-top: 0px;
 	}
 	#roomlist { opacity: 0.7; }
-	#announcements>li {
+	#announcements>li>.desc {
 		padding-top: 0em;
 		padding-bottom:0em;
+		font-size: 74%;
+		white-space: wrap !important !important;
+	}
+	.desc {
+		white-space: wrap;
 	}
 	#announcements>li>h1 {
 		margin-top:0.1em;
 		margin-bottom:0.1em;
+		#font-size: 75%;
 	}
 	#neeskay {
 		background-color: #9999ff;
@@ -96,6 +102,9 @@ $MAPMARGIN=10;
 	div.desc div.brtag {
 		height: 0.3em;
 	}
+	.ui-listview>.ui-li-static>div.desc {
+		white-space: wrap;
+        }
 	.ui-listview>.ui-li-static.ui-li-has-icon {
 		padding-left: 1.8em;
 	}
@@ -104,6 +113,14 @@ $MAPMARGIN=10;
 		left: .5em;
 		top: .6em;
 	}
+
+	.ui-listview>.ui-li-static, .ui-listview>.ui-li-divider, .ui-listview>li>a.ui-btn {
+		white-space: normal !important;
+	}
+
+
+
+
 	.ui-header h1.ui-title {
 		margin-right:5%;
 		margin-left: 5%;
@@ -345,7 +362,7 @@ function updaterooms(everything, nextMove) {
 		var bldghtml = "";
 		if (bldg.length >= 1) {
 			//bldghtml = '<li data-role="list-divider" data-theme="b">General SFS Announcements</li>';
-			bldghtml += '<li><h1>'+bldg[0].subject+'</h1><div style="desc">'+bldg[0].body+'</div></li>';
+			bldghtml += '<li><h1>'+bldg[0].subject+'</h1><div class="desc"><div id="f_it">'+bldg[0].body+'</div></div></li>';
 			$('#announcements').html(bldghtml);
 			$('#announcements').show();
 		} else {
@@ -584,12 +601,21 @@ ul.events.ui-listview {
 }
 
 ul.events.ui-listview>.ui-li-static {
-	white-space: normal;
+	white-space: normal !important;
 	padding-left: 8em;
 	padding-right: 8em;
 	min-height: 5em;
 	background: transparent;
 }
+
+ul.events.ui-listview>.ui-li-static div.desc {
+	white-space: wrap !important !important;
+}
+
+#f_it {
+	white-space: wrap !important;
+}
+
 ul.events.ui-listview>.ui-li-static div.datebox {
 	position:absolute; top:0; left:0; height:100%; width: 7em;
 	background: #ffbd00; color: #00000; text-align:center; display: flex; justify-content: center;
@@ -618,14 +644,16 @@ ul.events.ui-listview>.ui-li-static div.location {
 
 #announcements li.ui-li-static.ui-body-inherit {
 	font-size: 200%;
-	background-color: #ffdddd;
+	background-color: #ff8800;
 }
 
 body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
-
+.ui-listview>.ui-li-static {
+	white-space: wrap !important;
+}
 </style>
 
 </head>
@@ -744,4 +772,10 @@ this worked, just saving it until the automatic filling works
       $('#content').css({height:  ($('#page').height()-56)});
     </script>
      */ ?>
+     <script>
+	window.setTimeout(() => {
+	     console.log('fit!');
+	     $('#f_it').css('whiteSpace','');
+      }, 5000);
+      </script>
 </html>
