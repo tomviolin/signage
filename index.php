@@ -234,7 +234,17 @@ function flipem() {
 function updaterooms(everything, nextMove) {
 	numevents=8;
 	var thisNow = new Date().getTime()/1000 + timeOffset;
-	//$('#bg'+(1-bgidx)).css('background-image','url(http://www.glwi.freshwater.uwm.edu/~tomh/iphonepics/currentlink.jpg?time='+thisNow+')');
+	//$('#bg'+(1-bgidx)).css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
+	//$('#player').css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
+	
+	
+	var x = document.createElement("IMG");
+	x.addEventListener('load', () => {
+		window.setTimeout(()=>{
+			$('#player').css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
+		},1500);
+	});
+	x.src = 'http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow;
 	$('#clock').html(moment(thisNow*1000).format('MMMM D Y h:mm:ss A'));
 	if (!everything) return;
 	$.getJSON("getdata.php?now="+thisNow+"&limitevents="+numevents, function(data) {
@@ -658,7 +668,7 @@ body {
 
 </head>
 <body style="background-color: black;"> 
-<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('webcamsample.jpg'); background-size: 120.5%"></div>
+<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('http://waterbase.uwm.edu/webcam/currentlink.jpg'); background-size: 120.5%"></div>
 
 <!-- <div id="bg0" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:0"></div>
 <div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:1"></div>  -->

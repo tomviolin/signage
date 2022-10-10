@@ -50,7 +50,11 @@ function insertEvents($icsFile, $psource='') {
 		$source = $psource;
 	}
 	global $db;
-	$ical   = new ICal($icsFile);
+	try {
+		$ical   = @new ICal($icsFile);
+	} catch (Exception $e) {
+		return;
+	}
 	//unlink($srcFilename);
 	$events = $ical->events();
 
@@ -83,7 +87,7 @@ function insertEvents($icsFile, $psource='') {
 		$end  = strtotime($event['DTEND']);
 		$endpr = date('Y-m-d H:i:s',$end);
 		$title = fixicstext($event['SUMMARY']);
-		$body = fixicstext($event['DESCRIPTION']);
+		$body = @fixicstext($event['DESCRIPTION']);
 		if (isset($event['LOCATION'])) {
 			$location=fixicstext($event['LOCATION']);
 		} else {
