@@ -102,11 +102,19 @@ function insertEvents($icsFile, $psource='') {
 		}
 		$url="";
 		if (isset($event['URL'])) $url = $event['URL'];
+		if ($source == "roar" && $title[0] != '[') {
+			$glrfloc = $location;
+			if (substr($glrfloc,0,5) == "GLRF ") {
+				$glrfloc = substr($glrfloc,5);
+			}
+			$title = "[$glrfloc] $title";
+		}
 		$result = $st->execute();
 	}
 }
 insertEvents("http://localhost/signage/sfscal.php", 'http://uwm.edu/freshwater/events/?ical=1');
-insertEvents('/calendars/GLRF_ALL.ics','roar');
+//insertEvents('/calendars/GLRF_ALL.ics','roar');
+insertEvents('https://25livepub.collegenet.com/calendars/uwm-sfs-all-events.ics','roar');
 insertEvents('https://calendar.google.com/calendar/ical/omohit5llfij2fnafsadkeihlc%40group.calendar.google.com/private-b83faceb660da1fd7e5793f57e96bdfc/basic.ics');
 insertEvents('https://calendar.google.com/calendar/ical/sfs.neeskay%40gmail.com/public/basic.ics');
 

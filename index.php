@@ -230,21 +230,24 @@ function flipem() {
 	$('#bg'+(1-bgidx)).css('z-index', 1-bgidx);
 	bgidx=1-bgidx;
 }
-
+var thatNow = 0;
 function updaterooms(everything, nextMove) {
 	numevents=8;
 	var thisNow = new Date().getTime()/1000 + timeOffset;
 	//$('#bg'+(1-bgidx)).css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
 	//$('#player').css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
 	
-	
-	var x = document.createElement("IMG");
-	x.addEventListener('load', () => {
-		window.setTimeout(()=>{
-			$('#player').css('background-image','url(http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow+')');
-		},1500);
-	});
-	x.src = 'http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow;
+	if (thatNow != thisNow) {
+		var x = document.createElement("IMG");
+		x.addEventListener('load', () => {
+			console.log(x.complete);
+			//window.setTimeout(()=>{
+			$('#player').css('background-image','url('+x.src+')');
+			//},100);
+		});
+		x.src = 'http://waterbase.uwm.edu/webcam/currentlink.jpg?time='+thisNow;
+	}
+	thatNow = thisNow;
 	$('#clock').html(moment(thisNow*1000).format('MMMM D Y h:mm:ss A'));
 	if (!everything) return;
 	$.getJSON("getdata.php?now="+thisNow+"&limitevents="+numevents, function(data) {
@@ -343,8 +346,8 @@ function updaterooms(everything, nextMove) {
 		}
 
 		eventml='<li data-role="list-divider" data-theme="b" style="font-size:150%">Upcoming Events and Announcements</li>';
-		eventml += "<li style='border-color:black;background-color:#ffbd00; display:flex;' data-theme='b'>\n";
-		eventml += "<span style='font-size:200%;color:#000000; background-color: #ffbd00;'>Visit our <a href=\"https://uwm.edu/coronavirus/\">COVID-19 website</a> for information about UWM’s response to the pandemic.</span><br><img width=75 src=\"uwm_corona.png\"></li>";
+		/* eventml += "<li style='border-color:black;background-color:#ffbd00; display:flex;' data-theme='b'>\n";
+		eventml += "<span style='font-size:200%;color:#000000; background-color: #ffbd00;'>Visit our <a href=\"https://uwm.edu/coronavirus/\">COVID-19 website</a> for information about UWM’s response to the pandemic.</span><br><img width=75 src=\"uwm_corona.png\"></li>"; */
 		for (var i = 0; i < data.events.length; ++i) {
 			x=data.events[i];
 			var datemonth = moment(x.dtstart*1000).format('MMM');
@@ -668,7 +671,7 @@ body {
 
 </head>
 <body style="background-color: black;"> 
-<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; background-image: url('http://waterbase.uwm.edu/webcam/currentlink.jpg'); background-size: 120.5%"></div>
+<div id="player" style="postion:absolute; top:0;left:0;min-width:95%;min-height:99.9999%;padding:0;margin:0; _X_background-image: url('http://waterbase.uwm.edu/webcam/currentlink.jpg'); background-size: 120.5%"></div>
 
 <!-- <div id="bg0" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:0"></div>
 <div id="bg1" style="position: absolute; top:0; bottom:0; left:0; right:0; background: black; z-index:1"></div>  -->
